@@ -11,7 +11,7 @@ ____
 
 В C# (или любом другом строго типизированном языке программирования) переменная не может быть одновременно true и false. Однако, можно создать условие, которое использует операторы перегрузки, чтобы заставить выражение someBool == true && someBool == false возвращать true. 
 
-Код содержится в папке **BooleanTask.
+Код содержится в папке **BooleanTask**.
 ____
 
 # Задание №2:
@@ -36,7 +36,7 @@ Rules:
 * An Operation can only call a Value
 * A Value should be resolvable to a primitive integer, if needed as such
 
-Код решения содержится в папке **FluentCalculator.
+Код решения содержится в папке **FluentCalculator**.
 
 В этом коде:
 - Каждое число от Zero до Ten представлено как статическое свойство.
