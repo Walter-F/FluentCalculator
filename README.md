@@ -1,5 +1,4 @@
 # FluentCalculator
-____
 
 # Задание №1:
 1. Может ли переменная быть одновременно `True` и `False`? Определите `someBool` так, чтобы следующее выражение возвращало true: `someBool == true && someBool == false`
