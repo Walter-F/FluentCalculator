@@ -12,34 +12,31 @@ ____
 
 # Задание №2:
 
-Implement a simple calculator with fluent syntax
-var FluentCalculator = /* Some magic */;
+Реализуйте простой калькулятор с плавным синтаксисом
+var FluentCalculator = /* Немного магии */;
 
-FluentCalculator should be separated in two, the Values and the Operations, one can call the other, but cannot call one of his own.
-A Value can call an Operation, but cannot call a value
+FluentCalculator должен быть разделен на две части, значения и операции, одно может вызывать другое, но не может вызывать свое собственное.
+Значение может вызывать операцию, но не может вызывать значение
 
-FluentCalculator.one.plus FluentCalculator.one.one // error or "undefined", it's up to you.
+FluentCalculator.one.plus FluentCalculator.one.one // ошибка или "не определено", это зависит от вас.
 
-An Operation can call a Value, but cannot call a operation
+Операция может вызывать значение, но не может вызывать операцию
 
-FluentCalculator.one.plus.two // this should have a value of 3 FluentCalculator.one.plus.plus // error or "undefined", it's up to you
+FluentCalculator.one.plus.two // это значение должно быть равно 3 FluentCalculator.one.plus.плюс // ошибка или "не определено", это зависит от вас
 
-Pairs of Value and Operation should be stackable to infinity
+Пары значений и операций должны быть суммированы до бесконечности
 
-FluentCalculator.one.plus.two.plus.three.minus.one.minus.two.minus.four // Should be -1
+FluentCalculator.один.плюс.два.плюс.три.минус.один.минус.два.минус.четыре // Должно быть равно -1
 
-A Value should resolve to a primitive integer
+Значение должно быть преобразовано в примитивное целое число
 
-FluentCalculator.one.plus.ten - 10 // Should be 1
+FluentCalculator.one.plus.ten - 10 // Должно быть равно 1
 
-Rules:
-* Values in FluentCalculator should go from zero to ten.
-* Supported Operations are plus, minus, times, dividedBy
-* Rules mentioned above
-* FluentCalculator should be stackable to infinity
-* A Value can only call an Operation
-* An Operation can only call a Value
-* A Value should be resolvable to a primitive integer, if needed as such
+Правила:
+* Значения в FluentCalculator должны быть от нуля до десяти;
+* Поддерживаются следующие операции: плюс, минус, умножение, деление на;
+* Правила, упомянутые выше;
+* FluentCalculator должен быть составным.
 
 Код решения содержится в папке **FluentCalculator**.
 
